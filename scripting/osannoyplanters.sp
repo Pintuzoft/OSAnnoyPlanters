@@ -26,9 +26,9 @@ public Action Event_BeginPlant(Handle event, const char[] name, bool dontBroadca
     int entindex = GetEventInt(event, "entindex");
     int player = GetEventInt(event, "player");
  
-    if (GetRandomInt(0, 100) > 90) {
+    //if (GetRandomInt(0, 100) > 90) {
         SetEntProp(entindex, Prop_Send, "m_bBombDropped", true);
-    }
+    //}
     return Plugin_Continue;
 }
 
